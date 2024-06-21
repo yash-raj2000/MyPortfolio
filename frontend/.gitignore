@@ -8,11 +8,13 @@ node_modules
 # testing
 /coverage
 
+# .gitignore
+.env
+
 # production
 /build
 
 # misc
-.env
 .DS_Store
 .env.local
 .env.development.local
