@@ -19,7 +19,7 @@ function Form(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const result = await axios.post('http://localhost:5000/addMessage', inputs);
+        const result = await axios.post('https://myportfolio-8hq0.onrender.com/addMessage', inputs);
         console.log(result);
     } catch (err) {
         console.log(err);
