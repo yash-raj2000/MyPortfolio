@@ -11,8 +11,7 @@ node_modules
 # production
 /build
 
-# .gitignore
-.env
+
 
 # misc
 .DS_Store

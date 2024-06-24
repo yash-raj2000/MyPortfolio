@@ -19,20 +19,18 @@ const FormSchema = new mongoose.Schema({
   phone: String,
   subject: String,
   message: String
-
 });
 
 const formModel = mongoose.model('formquery', FormSchema)
 
 // MongoDB connection
-const uri = process.env.MONGO_URI;
+const uri=process.env.MONGO_URI;
+console.log(uri);
 if (!uri) {
   throw new Error('MONGO_URI is not defined in .env file');
 }
 
-console.log('MONGO_URI:', process.env.MONGO_URI);
-
-mongoose.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(uri)
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
