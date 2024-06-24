@@ -1,6 +1,8 @@
 # My Portfolio Website
 
-![Website Screenshot](https://drive.google.com/file/d/1erzgc1QspsNCHsrXxpLo6czZzO6q7K_p/view?usp=sharing)
+![Website Screenshot](https://drive.google.com/uc?export=view&id=1erzgc1QspsNCHsrXxpLo6czZzO6q7K_p)
+
+## Overview
 
 ## Overview
 
