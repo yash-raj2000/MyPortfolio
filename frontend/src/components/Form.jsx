@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-
 function Form(props) {
   const [inputs, setInputs] = useState({
     fName: "",
@@ -19,12 +18,27 @@ function Form(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const result = await axios.post('https://myportfolio-8hq0.onrender.com/addMessage', inputs);  //This server is rendering on render
-        console.log(result);
+      const result = await axios.post(
+        "https://myportfolio-8hq0.onrender.com/addMessage",
+        inputs
+      ); //This server is rendering on render
+      console.log(result);
+      if (result.status === 200) {
+        // or whatever status indicates success
+        setInputs({
+          fName: "",
+          lName: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+      }
+      alert("Message Sent Successfully");
     } catch (err) {
-        console.log(err);
+      console.log(err);
     }
-};
+  };
 
   return (
     <div className="div" style={{ display: "flex", width: "180%" }}>
@@ -90,7 +104,7 @@ function Form(props) {
           <button className="form-btn close" onClick={props.closeForm}>
             CLOSE
           </button>
-          <button className="form-btn send" type="submit" >
+          <button className="form-btn send" type="submit">
             SEND
           </button>
         </div>
