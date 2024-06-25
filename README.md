@@ -4,8 +4,6 @@
 
 ## Overview
 
-## Overview
-
 Welcome to my portfolio website! This project showcases my skills, projects, and professional journey as a developer. Built with the MERN stack (MongoDB, Express.js, React, and Node.js), this website highlights my proficiency in full-stack development and provides an interactive platform to explore my work.
 
 ## Features
