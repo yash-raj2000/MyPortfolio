@@ -22,6 +22,7 @@ function Form(props) {
   const handleSubmit = async (e) => {
     setSpinner(true);
     e.preventDefault();
+    setSpinner(true);
     try {
       const result = await axios.post(
         "https://myportfolio-8hq0.onrender.com/addMessage",
@@ -29,6 +30,7 @@ function Form(props) {
       ); //This server is rendering on render
       console.log(result);
       if (result.status === 200) {
+        setSpinner(false);
         // or whatever status indicates success
         setSpinner(false);
         setInputs({
