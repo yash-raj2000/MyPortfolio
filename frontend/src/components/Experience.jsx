@@ -7,6 +7,28 @@ function Experience() {
         <div className="title">
           <h2>EXPERIENCE</h2>
         </div>
+
+        <h4 style={{ color: "blue", marginTop: "2rem" }}>
+          Pinnacle Labs [Internship(06-2024 to 07-2024)]
+        </h4>
+
+        <div className="content">
+          <p style={{ marginTop: "3rem" }}>
+            <ul>
+              <li>
+              Developed a weather application that integrates with the OpenWeather API to fetch and
+              display real-time weather data.
+              </li>
+              <li>
+              Developed a News application that integrates with News Api for Real-time news updates from
+              trusted sources with personalized content based on user interests.
+              </li>
+              
+            </ul>
+          </p>
+        </div>
+
+
         <h4 style={{ color: "blue", marginTop: "2rem" }}>
           INFOSYS [Full-Time(10-2022 to 07-2023)]
         </h4>

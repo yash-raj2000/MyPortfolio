@@ -3,7 +3,7 @@ import React from "react";
 function Home() {
   const openResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1_Ueq5F4sBUDJd3dKy2Ux8cpbh_D6LewK/view?usp=drive_link",
+      "https://drive.google.com/file/d/1-M_0BPTAqUqtakjLIrY5V8DSwA5bLiaY/view?usp=sharing",
       "_blank"
     );
   };
@@ -13,7 +13,7 @@ function Home() {
       <div className="left">
         <p>Hii, my name is</p>
         <span className="name">Yashraj Singh</span>
-        <p>Frontend Web Developer</p>
+        <p>A Passionate Software Developer</p>
 
         <button className="home-btn" onClick={openResume}>
           <span style={{ fontSize: "1rem" }}>VIEW RESUME📄</span>

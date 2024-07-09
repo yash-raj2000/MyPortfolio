@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Box from "@mui/material/Box";
+import LinearProgress from "@mui/material/LinearProgress";
 
 function Form(props) {
   const [inputs, setInputs] = useState({
@@ -11,11 +13,14 @@ function Form(props) {
     message: "",
   });
 
+  const [spinner, setSpinner] = useState(false);
+
   function handleChange(e) {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   }
 
   const handleSubmit = async (e) => {
+    setSpinner(true);
     e.preventDefault();
     try {
       const result = await axios.post(
@@ -25,6 +30,7 @@ function Form(props) {
       console.log(result);
       if (result.status === 200) {
         // or whatever status indicates success
+        setSpinner(false);
         setInputs({
           fName: "",
           lName: "",
@@ -107,6 +113,14 @@ function Form(props) {
           <button className="form-btn send" type="submit">
             SEND
           </button>
+          {spinner && (
+            <Box
+              sx={{ width: "100%" }}
+              style={{ width: "70%", margin: "20px" }}
+            >
+              <LinearProgress />
+            </Box>
+          )}
         </div>
       </form>
     </div>

@@ -45,9 +45,6 @@ function Skills() {
             <div className="logo1">
               <img src={require("./MongoDB-logo.webp")} alt="" />
             </div>
-            <div className="logo1">
-              <img src={require("./postresql.png")} alt="" />
-            </div>
           </div>
         </div>
 

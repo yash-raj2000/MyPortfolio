@@ -13,6 +13,9 @@ function Projects() {
   const openProject4 = () => {
     window.open("https://services-anand.netlify.app/", "_blank");
   };
+  const openProject5 = () => {
+    window.open("https://notespherebyyashraj.netlify.app/", "_blank");
+  };
 
   return (
     <div className="project">
@@ -124,7 +127,7 @@ function Projects() {
         {/* 5th project */}
         <div className="pro-cont" style={{ marginBottom: "4rem" }}>
           <div className="p-left">
-            <h2 className="h3">NOTES KEEPER</h2>
+            <h2 className="h3">NOTESPHERE</h2>
             <p className="p-desc">
               A notes app for the one’s who needed aid in note taking. Writing
               neatly and legibly so that notes are easily used.With edit and
@@ -138,7 +141,7 @@ function Projects() {
               <li className="li">Express.js</li>
               <li className="li">PostgreSQL</li>
             </ul>
-            {/* <button className="btn-p">VIEW PROJECT</button> */}
+            <button className="btn-p" onClick={openProject5}>VIEW PROJECT</button>
           </div>
           <div className="p-right">
             <img className="img" src={require("./note-app.png")} alt="" />
