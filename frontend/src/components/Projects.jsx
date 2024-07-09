@@ -38,7 +38,7 @@ function Projects() {
               <li className="li">HTMLS | CSS</li>
               <li className="li">React</li>
               <li className="li">Node/Express.JS</li>
-              <li className="li">PostgreSQL</li>
+              <li className="li">MongoDB</li>
             </ul>
             <button className="btn-p" onClick={openProject1}>
               VIEW PROJECT
@@ -67,7 +67,7 @@ function Projects() {
               <li className="li">CSS</li>
               <li className="li">React</li>
               <li className="li">Node/Express.JS</li>
-              <li className="li">PostgreSQL</li>
+              <li className="li">MongoDB</li>
             </ul>
             <button className="btn-p" onClick={openProject2}>
               VIEW PROJECT
@@ -139,7 +139,7 @@ function Projects() {
               <li className="li">Material UI</li>
               <li className="li">React</li>
               <li className="li">Express.js</li>
-              <li className="li">PostgreSQL</li>
+              <li className="li">MongoDB</li>
             </ul>
             <button className="btn-p" onClick={openProject5}>VIEW PROJECT</button>
           </div>
@@ -157,11 +157,12 @@ function Projects() {
               Business, Science and Technology etc.
             </p>
             <ul className="ul">
-              <li className="li">HTMLS</li>
+              <li className="li">HTML</li>
               <li className="li">CSS</li>
               <li className="li">BOOTSTRAP</li>
               <li className="li">JavaScript</li>
               <li className="li">React</li>
+              <li className="li">News API</li>
             </ul>
             {/* <button className="btn-p">VIEW PROJECT</button> */}
           </div>
